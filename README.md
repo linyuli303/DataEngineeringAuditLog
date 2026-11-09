@@ -4,6 +4,14 @@ An interactive HTML dashboard for tracking row counts through a Python data pipe
 
 **This repository is a synthetic demonstration.** All sample counts, dates, identifiers, paths, filenames, and processing rules are invented. No production datasets or employee records are included.
 
+https://github.com/user-attachments/assets/1a80eb82-f665-449c-952a-1ab0ff951df4
+
+https://github.com/user-attachments/assets/f647e60a-fcee-4030-93c9-ecc6d1592343
+
+https://github.com/user-attachments/assets/99ab5401-b56e-46e2-8a95-40c6eac3346e
+
+https://github.com/user-attachments/assets/922b3516-0319-4d35-ad94-57c92570bfc2
+
 ## Preview
 
 Open **`demo_dashboard.html`** in your browser to explore the supplied demo. No Python installation is required to view this pre-generated file.
