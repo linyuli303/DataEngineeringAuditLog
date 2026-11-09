@@ -1,0 +1,2 @@
+# DataEngineeringAuditLog
+Interactive Python pipeline-audit demo with persistent row-count history, side-by-side run comparison, synchronized scrolling, and synthetic data.
