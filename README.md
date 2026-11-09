@@ -11,16 +11,15 @@ The example contains **two runs with 17 audit events per run**, illustrating inc
 **[Open the live dashboard](https://linyuli303.github.io/DataEngineeringAuditLog/)**
 
 Explore side-by-side run comparisons, synchronized scrolling, matching-step highlighting, and row-count changes. No download or Python installation is required to explore the live demo.
+Explore the **theme palette** in the upper-right corner of the dashboard. The default theme is **Spring**. Recommended browser zoom: **75%**.
 
 ### Video Walkthroughs
 
-https://github.com/user-attachments/assets/1a80eb82-f665-449c-952a-1ab0ff951df4
+https://github.com/user-attachments/assets/2db028ec-aeba-400d-84aa-f1ff6a9a3576
 
-https://github.com/user-attachments/assets/f647e60a-fcee-4030-93c9-ecc6d1592343
+https://github.com/user-attachments/assets/533e375a-83e1-48c6-a83c-d884659a2f27
 
-https://github.com/user-attachments/assets/99ab5401-b56e-46e2-8a95-40c6eac3346e
-
-https://github.com/user-attachments/assets/922b3516-0319-4d35-ad94-57c92570bfc2
+https://github.com/user-attachments/assets/d9eea504-9949-46a0-ab70-c732fb917b2c
 
 ## Why This Dashboard?
 
