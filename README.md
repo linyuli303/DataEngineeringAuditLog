@@ -139,35 +139,3 @@ A report generated only at the end cannot recover intermediate DataFrames alread
 
 For a real pipeline, use the loaded DataFrame in subsequent processing rather than reading the file independently again. The log describes Python checkpoints, not a Power BI refresh.
 
-### Implementation limits
-
-- The helper uses local CSV files and is intended for one writer at a time. Avoid concurrent pipeline runs writing to the same history file.
-- Scroll alignment pairs rows by their position and assumes consistent checkpoint order. Matching-step highlighting uses checkpoint identity.
-- The dashboard is a generated snapshot, not a live service. Regenerate the HTML after changing data or presentation code.
-- If a helper is already imported into a notebook, replacing its file alone does not reload the module. Restart/reload it before regenerating the report.
-- Audit history preserves metadata, not earlier source-file contents.
-- Generated HTML includes client-side JavaScript; browser security policies may restrict some features.
-
-## Privacy and publication
-
-This demo was created from invented audit records, not production data with renamed people.
-
-**Publish only the supplied demo files.** Do not add private source workbooks, real audit histories, organizational paths, or production notebook outputs to the repository.
-
-Hover-only paths are **not hidden securely**: they remain in the HTML attributes and CSV. Demo paths point to nonexistent files under `C:/demo/input/`.
-
-Review your changes and staged files before pushing. Remove sensitive notebook outputs before sharing, and avoid committing secrets or personal paths. If a secret has already been published, deleting it from the latest file alone does not remove it from Git history.
-
-## Suggested GitHub description
-
-Interactive Python pipeline-audit demo with persistent row-count history, side-by-side run comparison, synchronized scrolling, and synthetic data.
-
-## License
-
-No license has been selected in this template. Add an appropriate `LICENSE` file before presenting the project as licensed open-source software.
-
-## Publishing this demo
-
-The included `.gitignore` excludes common private inputs, workbooks, credential files, and Python caches. Only `demo_audit_history.csv` is allowed through the general CSV exclusion. Ignore rules do not protect files that are already tracked, do not remove secrets from Git history, and are not a substitute for reviewing staged files.
-
-For an optional GitHub Pages demo, publish `main` from the repository root in Settings → Pages. `index.html` is a copy of the synthetic dashboard, and `.nojekyll` selects a plain static site. After regenerating the dashboard, refresh `index.html` from `demo_dashboard.html` before committing. GitHub Pages serves HTML; it does not execute this Python pipeline. Never publish real audit data to Pages.
