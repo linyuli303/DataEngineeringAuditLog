@@ -1,0 +1,57 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+build/
+dist/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Notebook checkpoints (tracked notebooks must still have clean outputs)
+.ipynb_checkpoints/
+
+# Credentials and machine-specific configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Editor / OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Never publish source workbooks, private datasets, logs, or archives
+*.xlsx
+*.xls
+*.xlsm
+*.xlsb
+*.csv
+!demo_audit_history.csv
+*.log
+*.zip
+private/
+input/
+inputs/
+data/
+output/
+outputs/
+
+# Private pipeline helpers, notebooks, and generated reports
+csrd_*
+data_preprocessiong_*
+*_audit_dashboard.html
+*_pipeline_dashboard.html
+*_pipeline_focused_dashboard.html
+
+# The explicitly synthetic demo_dashboard.html and demo_audit_history.csv
+# are intentionally included for a ready-to-view public demonstration.
